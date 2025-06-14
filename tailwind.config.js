@@ -7,9 +7,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        poppins: [ 'Montserrat', 'sans-serif'],
-        montserrat: [ 'Montserrat','sans-serif'],
-        hind :['Hind Siliguri', 'sans-serif']
+        helvetica: [ 'Space Grotesk', 'sans-serif'],
+       
       },
       colors: {
         'bg-color': '#2A1148',

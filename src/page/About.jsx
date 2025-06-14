@@ -10,7 +10,7 @@ const About = () => {
     return (
 <>
 
- <div className="min-h-screen  text-white flex items-center justify-center p-6 md:top-0 md:bottom-0 ">
+ <div className="min-h-screen  text-white flex items-center justify-center p-6 md:top-0 md:bottom-0 font-helvetica">
       <div className="flex flex-col md:flex-row items-center gap-6 md:gap-10 max-w-6xl w-full animate-fade-in-up duration-1000">
         
         {/* Profile Image */}
@@ -28,10 +28,10 @@ const About = () => {
           <h2 className="text-4xl font-montserrat font-thin">
             Who is <span className="text-lime-400">Arif Jahan?</span>
           </h2>
-          <p className="text-xl  text-white font-montserrat font-thin">
+          <p className="text-xl  text-white font-helvetica font-thin">
             “Helping businesses grow with creative web design and development solutions.”
           </p>
-          <p className="text-gray-300 leading-relaxed">
+          <p className="text-gray-300 leading-relaxed font-helvetica">
             Hi, I’m a passionate <span className="text-lime-400 font-medium">Frontend Web Developer</span> and <span className="text-lime-400 font-thin font-montserrat">WordPress Expert</span> with a strong focus on delivering clean, responsive, and user-friendly web experiences. I specialize in crafting modern UI with technologies like <span className="text-lime-400 font-medium">ReactJS</span>, <span className="text-lime-400 font-medium">JavaScript</span>, and <span className="text-lime-400 font-medium">Tailwind CSS</span>, while also building powerful and customizable websites using WordPress.
           </p>
 

@@ -12,6 +12,7 @@ import Blog from './page/Blog';
 import About from './page/About';
 import Service from './component/Service';
 import Contact from './page/Contact';
+import SinggelBlog from './component/SinggelBlog';
 
 
 
@@ -41,6 +42,10 @@ const router = createBrowserRouter([
     {
       path: '/Service-page',
       element:<Service/>,
+    },
+    {
+      path: '/SinggelBlog-page',
+      element:<SinggelBlog/>,
     },
    
     {

@@ -12,7 +12,7 @@ const Blog = () => {
             <div className="overflow-hidden h-48">
               <img
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                src="/blog/Screenshot 2025-06-02 170120.png"
+                src="/public/blog/blog.png"
                 alt="Programming habits"
               />
             </div>
@@ -96,7 +96,7 @@ const Blog = () => {
             <div className="overflow-hidden h-48">
               <img
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                src="blog/Screenshot 2025-06-02 170120.png"
+                src="/blog/blog 3.png"
                 alt="Programming habits"
               />
             </div>
@@ -123,13 +123,15 @@ const Blog = () => {
                 কোথায় লিখবেন সেটা নিয়েই দ্বিধায় আছেন, এমন যদি হয় আপনার
                 অবস্থা তাহলে এই লেখা আপনার জন্য।
               </p>
-              
+              <a href="/SinggelBlog-page">
+                
               <button className="text-purple-400 hover:text-purple-300 font-medium flex items-center transition-colors">
                 Read More
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
               </button>
+              </a>
             </div>
           </div>
         </div>

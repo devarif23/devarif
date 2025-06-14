@@ -44,7 +44,7 @@ const Hero = () => {
               />
             </div>
 
-            <p className="text-base sm:text-lg mb-6 md:mb-8 md:leading-relaxed">
+            <p className="text-base sm:text-lg mb-6 md:mb-8 md:leading-relaxed font-helvetica  ">
               From Rangpur, Bangladesh. I'm a Front End Web developer who is passionate about making error-free websites. I am good at WordPress. I love to talk with you about your unique projects.
             </p>
 

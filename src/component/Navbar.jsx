@@ -15,7 +15,7 @@ const Navbar = () => {
           {/* Logo */}
           <div className="flex items-center space-x-2">
             <Link to="/">
-              <h1 className="text-primary text-2xl font-bold">arifjahan</h1>
+              <h1 className="text-primary text-xl font-helvetica font-bold">arifjahan</h1>
             </Link>
           </div>
 
