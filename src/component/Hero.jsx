@@ -3,8 +3,32 @@ import { motion } from "framer-motion";
 import Work from "./Work";
 import { FaFacebookF, FaGithub, FaInstagram, FaLinkedinIn, FaPinterest } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import { useEffect } from "react";
 
 const Hero = () => {
+    useEffect(() => {
+    // 👉 রাইট ক্লিক বন্ধ
+    const handleContextMenu = (e) => {
+      e.preventDefault();
+    };
+    document.addEventListener("contextmenu", handleContextMenu);
+
+    // 👉 Ctrl+C, Ctrl+U, Ctrl+S ইত্যাদি বন্ধ
+    const handleKeyDown = (e) => {
+      if (
+        e.ctrlKey &&
+        ["c", "u", "s", "a"].includes(e.key.toLowerCase())
+      ) {
+        e.preventDefault();
+      }
+    };
+    document.addEventListener("keydown", handleKeyDown);
+
+    return () => {
+      document.removeEventListener("contextmenu", handleContextMenu);
+      document.removeEventListener("keydown", handleKeyDown);
+    };
+  }, []);
   return (
     <>
       <section className="heroSection w-full max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
@@ -129,9 +153,9 @@ const Hero = () => {
     href="https://linkedin.com/in/your-profile"
     target="_blank"
     rel="noopener noreferrer"
-    className="p-3 rounded-full border-2 border-gray-300 dark:border-gray-600 hover:border-blue-500 hover:bg-blue-100 dark:hover:bg-blue-900/30 transition-all duration-300 group cursor-pointer hover:scale-105 hover:shadow-md hover:shadow-blue-500/20"
+    className="p-3 rounded-full border-2 border-gray-300 dark:border-gray-600 hover:border-blue-500 hover:bg-gray-200 dark:hover:bg-blue-900/30 transition-all duration-300 group cursor-pointer hover:scale-105 hover:shadow-md hover:shadow-blue-500/20"
   >
-    <FaPinterest className="text-gray-700 dark:text-gray-300 group-hover:text-blue-600 text-xl md:text-2xl transition-colors duration-300" />
+    <FaPinterest className="text-gray-700 dark:text-gray-300 group-hover:text-[#E60023] text-xl md:text-2xl transition-colors duration-300" />
   </a>
 </div>
             </div>
@@ -154,7 +178,6 @@ const Hero = () => {
         </div>
       </section>
 
-      <Work />
     </>
   );
 };

@@ -1,4 +1,31 @@
+import { useEffect } from "react";
+
 const Blog = () => {
+  /* ============================================================= */
+   useEffect(() => {
+      // 👉 রাইট ক্লিক বন্ধ
+      const handleContextMenu = (e) => {
+        e.preventDefault();
+      };
+      document.addEventListener("contextmenu", handleContextMenu);
+  
+      // 👉 Ctrl+C, Ctrl+U, Ctrl+S ইত্যাদি বন্ধ
+      const handleKeyDown = (e) => {
+        if (
+          e.ctrlKey &&
+          ["c", "u", "s", "a"].includes(e.key.toLowerCase())
+        ) {
+          e.preventDefault();
+        }
+      };
+      document.addEventListener("keydown", handleKeyDown);
+  
+      return () => {
+        document.removeEventListener("contextmenu", handleContextMenu);
+        document.removeEventListener("keydown", handleKeyDown);
+      };
+    }, []);
+  /* =============================================================================== */
   return (
     <section className="py-12 px-4 md:px-0">
       <div className="max-w-6xl mx-auto">
@@ -55,7 +82,7 @@ const Blog = () => {
             <div className="overflow-hidden h-48">
               <img
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                src="blog/Screenshot 2025-06-02 170120.png"
+                src="/blog/Screenshot 2025-06-02 170120.png"
                 alt="Programming habits"
               />
             </div>

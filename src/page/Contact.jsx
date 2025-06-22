@@ -1,6 +1,37 @@
+import React, { useEffect } from "react";
 import { RiHeadphoneFill, RiMailFill, RiChat1Fill, RiArrowRightLine } from "react-icons/ri";
 
 const Contact = () => {
+        /* ========== from daynamic ============ */
+
+
+
+    /* ====================================== */
+ useEffect(() => {
+    // 👉 রাইট ক্লিক বন্ধ
+    const handleContextMenu = (e) => {
+      e.preventDefault();
+    };
+    document.addEventListener("contextmenu", handleContextMenu);
+
+    // 👉 Ctrl+C, Ctrl+U, Ctrl+S ইত্যাদি বন্ধ
+    const handleKeyDown = (e) => {
+      if (
+        e.ctrlKey &&
+        ["c", "u", "s", "a"].includes(e.key.toLowerCase())
+      ) {
+        e.preventDefault();
+      }
+    };
+    document.addEventListener("keydown", handleKeyDown);
+
+    return () => {
+      document.removeEventListener("contextmenu", handleContextMenu);
+      document.removeEventListener("keydown", handleKeyDown);
+    };
+  }, []);
+
+    /* ========================================= */
     return (
 <>
         <div className="mt-20 md:mb-10 flex flex-col justify-center items-center">
@@ -25,34 +56,44 @@ const Contact = () => {
             {/* Form Box */}
             <div className="bg-[#1b1e38] p-6 sm:p-8 md:p-10 rounded-xl flex-1 min-w-full md:min-w-[500px]">
                 <h2 className="mb-4 md:mb-5 text-xl sm:text-2xl text-primary">Send me a message</h2>
+
+
                 <form>
+            
+                 {/* <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE"/> */}
+
                     <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-3 sm:mb-4">
                         <input 
                             type="text" 
                             placeholder="Your Name" 
                             className="w-full p-2 sm:p-3 border border-[#2c2e4a] bg-transparent text-white rounded-lg outline-none"
+                            name="name"
                         />
                         <input 
                             type="text" 
                             placeholder="Phone Number" 
                             className="w-full p-2 sm:p-3 border border-[#2c2e4a] bg-transparent text-white rounded-lg outline-none"
+                            name="phone"
                         />
                     </div>
                     <input 
                         type="email" 
                         placeholder="Email Address" 
                         className="w-full p-2 sm:p-3 border border-[#2c2e4a] bg-transparent text-white rounded-lg outline-none mb-3 sm:mb-4"
+                        name="email"
                     />
                     <input 
                         type="text" 
                         placeholder="Your Subject" 
                         className="w-full p-2 sm:p-3 border border-[#2c2e4a] bg-transparent text-white rounded-lg outline-none mb-3 sm:mb-4"
+                        name="subject"
                     />
                     <textarea 
                         placeholder="Your Message" 
                         className="w-full p-2 sm:p-3 border border-[#2c2e4a] bg-transparent text-white rounded-lg outline-none resize-y h-28 sm:h-36"
+                        name="massage"
                     />
-                    <button className="mt-3 sm:mt-4 py-2 sm:py-3 px-4 sm:px-5 bg-cyan-400 text-black border-none rounded-3xl cursor-pointer font-bold inline-flex items-center gap-2 hover:bg-cyan-300 transition-colors text-sm sm:text-base">
+                    <button type="submit" className="mt-3 sm:mt-4 py-2 sm:py-3 px-4 sm:px-5 bg-cyan-400 text-black border-none rounded-3xl cursor-pointer font-bold inline-flex items-center gap-2 hover:bg-cyan-300 transition-colors text-sm sm:text-base">
                         Send Message <RiArrowRightLine className="text-sm" />
                     </button>
                 </form>

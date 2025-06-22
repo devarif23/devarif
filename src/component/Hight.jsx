@@ -1,12 +1,7 @@
 import { useEffect } from "react";
-import Hero from "../component/Hero";
-import Hight from "../component/Hight";
-import Service from "../component/Service";
-import Contact from "./Contact";
 
-
-const Home = () => {
-      useEffect(() => {
+const Hight = () => {
+  useEffect(() => {
     // 👉 রাইট ক্লিক বন্ধ
     const handleContextMenu = (e) => {
       e.preventDefault();
@@ -30,15 +25,16 @@ const Home = () => {
     };
   }, []);
 
-  
-    return (
-        <div>
-           
-           <Hero/>
-           <Service id="#service" />
-           <Contact/>
-        </div>
-    );
+  return (
+    <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100 p-6">
+      <h1 className="text-3xl font-bold text-blue-600 select-none">
+        👋 Welcome to My Website
+      </h1>
+      <p className="mt-4 text-gray-700 text-lg select-none max-w-xl text-center">
+        এই ওয়েবসাইট থেকে কনটেন্ট কপি করা বন্ধ করা হয়েছে। আপনি টেক্সট সিলেক্ট বা কপি করতে পারবেন না।
+      </p>
+    </div>
+  );
 };
 
-export default Home;
+export default Hight;
