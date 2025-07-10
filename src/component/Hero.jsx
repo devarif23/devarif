@@ -39,7 +39,7 @@ const Hero = () => {
    {/*    <!-- Other content (e.g., heading, paragraph, button) --> */}
 
       <img
-        src="/public/react1.png"
+        src="/react1.png"
         alt="React Logo"
         class="w-[250px] md:w-[350px] lg:w-[410px] absolute z-[-50] top-[40px] md:top-[70px] md:left-[66%] left-[20%] -translate-x-1/2 backdrop-opacity-85  animate-slow-spin"
       />
