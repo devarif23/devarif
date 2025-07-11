@@ -114,7 +114,7 @@ const Hero = () => {
            <div className="md:w-full flex justify-center md:justify-start items-center gap-3 md:gap-5 ml-0 md:ml-2 flex-wrap">
   {/* Facebook */}
   <a
-    href="https://web.facebook.com/arifjahan01"
+    href="https://www.facebook.com/devarif23"
     target="_blank"
     rel="noopener noreferrer"
     className="p-3 rounded-full border-2 border-gray-300 dark:border-gray-600 hover:border-blue-500 hover:bg-blue-100 dark:hover:bg-blue-900/30 transition-all duration-300 group cursor-pointer hover:scale-105 hover:shadow-md hover:shadow-blue-500/20"
@@ -124,7 +124,7 @@ const Hero = () => {
 
   {/* Instagram */}
   <a
-    href="https://www.instagram.com/arifjahan864/"
+    href="https://www.instagram.com/devarif23/"
     target="_blank"
     rel="noopener noreferrer"
     className="p-3 rounded-full border-2 border-gray-300 dark:border-gray-600 hover:bg-gradient-to-r from-pink-500 to-purple-500 hover:border-transparent transition-all duration-300 group cursor-pointer hover:scale-105 hover:shadow-md hover:shadow-purple-500/20"
@@ -134,7 +134,7 @@ const Hero = () => {
 
   {/* GitHub */}
   <a
-    href="https://github.com/devarif420"
+    href="https://github.com/devarif23"
     target="_blank"
     rel="noopener noreferrer"
     className="p-3 rounded-full border-2 border-gray-300 dark:border-gray-600 hover:border-gray-800 hover:bg-gray-100 dark:hover:bg-gray-800/30 transition-all duration-300 group cursor-pointer hover:scale-105 hover:shadow-md hover:shadow-gray-500/20"
