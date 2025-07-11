@@ -7,12 +7,12 @@ import { motion } from "framer-motion";
 
 const EducationSkillsSection = () => {
   const skills = [
-    { name: "HTML & CSS", level: 90, color: "#A3E635" },
-    { name: "WordPress", level: 40, color: "#A3E635" },
-    { name: "JavaScript", level: 50, color: "#A3E635" },
-    { name: "Java", level: 43, color: "#A3E635" },
-    { name: "Canva", level: 57, color: "#A3E635" },
-    { name: "Figma", level: 44, color:"#A3E635" },
+    { name: "HTML & CSS", level: 90, color: "#67E8F9" },
+    { name: "WordPress", level: 40, color: "#67E8F9" },
+    { name: "JavaScript", level: 50, color: "#67E8F9" },
+    { name: "Java", level: 43, color: "#67E8F9" },
+    { name: "Canva", level: 57, color: "#67E8F9" },
+    { name: "Figma", level: 44, color:"#67E8F9" },
   ];
 
   const education = [
@@ -30,10 +30,10 @@ const EducationSkillsSection = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
-          className="flex-1 border border-lime-400 rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
+          className="flex-1 border border-secondary rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
         >
-          <div className="bg-lime-400 p-4">
-            <h3 className="text-xl uppercase font-bold text-white flex items-center gap-2">
+          <div className="bg-secondary p-4">
+            <h3 className="text-xl uppercase font-bold text-black flex items-center gap-2">
               <HiAcademicCap className="text-2xl" />
               Education
             </h3>
@@ -41,12 +41,12 @@ const EducationSkillsSection = () => {
           <div className="p-6 space-y-6">
             {education.map((item, index) => (
               <div key={index} className="flex gap-4 items-start">
-                <div className="p-3 rounded-full text-lime-400">
+                <div className="p-3 rounded-full text-secondary">
                   {item.icon}
                 </div>
                 <div>
-                  <p className="text-sm text-gray-100">{item.year}</p>
-                  <h4 className="text-lg font-semibold text-gray-500">{item.title}</h4>
+                  <p className="text-sm text-white">{item.year}</p>
+                  <h4 className="text-lg font-semibold text-gray">{item.title}</h4>
                 </div>
               </div>
             ))}
@@ -59,10 +59,10 @@ const EducationSkillsSection = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
-          className="flex-1 border border-lime-400 rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
+          className="flex-1 border border-secondary rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
         >
-          <div className="bg-lime-400 p-4">
-            <h3 className="text-xl uppercase font-bold text-white flex items-center gap-2">
+          <div className="bg-secondary p-4">
+            <h3 className="text-xl uppercase font-bold text-black flex items-center gap-2">
               <FaLaptopCode className="text-2xl" />
               My Skills
             </h3>
@@ -72,9 +72,9 @@ const EducationSkillsSection = () => {
               <div key={index} className="space-y-2">
                 <div className="flex justify-between">
                   <span className="text-white font-medium">{skill.name}</span>
-                  <span className="text-gray-300">{skill.level}%</span>
+                  <span className="text-white">{skill.level}%</span>
                 </div>
-                <div className="w-full bg-gray-700 rounded-full h-2.5 overflow-hidden">
+                <div className="w-full bg-[#374151] rounded-full h-2.5 overflow-hidden">
                   <motion.div
                     initial={{ width: 0 }}
                     whileInView={{ width: `${skill.level}%` }}

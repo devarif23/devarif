@@ -53,7 +53,7 @@ const Hero = () => {
             transition={{ duration: 0.8 }}
           >
             <motion.button 
-              className="mb-4 px-6 py-3 text-body rounded-full text-sm font-medium border border-blue-950"
+              className="mb-4 px-6 py-3 text-body rounded-full text-sm font-medium border border-blue-900"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
@@ -66,21 +66,21 @@ const Hero = () => {
 
             <div className="h-10 sm:h-20 md:h-20 flex items-center">
               <TypeAnimation 
-                className="text-[#78e08f] text-2xl sm:text-3xl md:text-4xl"
+                className="text-secondary text-2xl sm:text-3xl md:text-4xl"
                 sequence={[
                   "Front End Web Developer",
-                  1000,
+                1000,
                   "WordPress Developer",
                   1000,
                 ]}
                 wrapper="span"
-                speed={1.0}
-                deletionSpeed={1.0}
+                speed={20}
+                deletionSpeed={20}
                 repeat={Infinity}
               />
             </div>
 
-            <p className="text-base sm:text-lg mb-6 md:mb-8 md:leading-relaxed font-helvetica  ">
+            <p className="text-gray-400 sm:text-lg mb-6 md:mb-8 md:leading-relaxed font-helvetica  ">
               From Rangpur, Bangladesh. I'm a Front End Web developer who is passionate about making error-free websites. I am good at WordPress. I love to talk with you about your unique projects.
             </p>
 
@@ -91,14 +91,14 @@ const Hero = () => {
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.97 }}
               >
-                <div className="w-full sm:w-[10.5em] h-[3.0em] relative button">
+                <div className="w-full sm:w-[10.5em] h-[3.0em] relative button mb-4">
                   <a
                     href="#"
                     className="w-full h-full text-primary border-border bg-neutral-900 border-2 px-4 py-1 font-medium flex justify-center items-center text-base sm:text-lg z-10 relative hover:translate-x-1 hover:translate-y-1 transition-all"
                   >
                     Download CV
                   </a>
-                  <div className="absolute z-0 bg-border w-full h-full top-1 left-1"></div>
+                  <div className="absolute z-0 bg-secondary w-full h-full top-1 left-1"></div>
                 </div>
               </motion.div>
 
@@ -111,7 +111,7 @@ const Hero = () => {
               
               </motion.div> */}
 
-           <div className="md:w-full flex justify-center md:justify-start items-center gap-3 md:gap-5 ml-0 md:ml-2 flex-wrap">
+           <div className="md:w-full flex justify-center md:justify-start items-center gap-3 md:gap-5 ml-0 md:ml-2 flex-wrap ">
   {/* Facebook */}
   <a
     href="https://www.facebook.com/devarif23"

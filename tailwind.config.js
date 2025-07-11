@@ -13,9 +13,10 @@ export default {
       colors: {
         'bg-color': '#2A1148',
         'primary': '#C1B4D1',
-        'secondary': '#130f40',
-        'border': '#7AFDCD',
-      },
+        'secondary': '#67E8F9',
+        'border': '#4da4b0',
+         'gray' : '#a7aaab'
+          },
       boxShadow: {
         '3xl': '0 35px 35px rgba(0, 0, 0, 0.25)',
         'soft': '0 5px 15px rgba(0,0,0,0.1)',

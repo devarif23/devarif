@@ -54,7 +54,7 @@ const Contact = () => {
 
         <div id="contact" className="max-w-[1200px] mx-auto flex flex-wrap gap-6 lg:gap-8 mb-12 mt-12 md:mb-16 lg:mb-20 px-4 sm:px-5">
             {/* Form Box */}
-            <div className="bg-[#1b1e38] p-6 sm:p-8 md:p-10 rounded-xl flex-1 min-w-full md:min-w-[500px]">
+            <div className="bg-[#1b1e3818] border border-[#2c2e4a] hover:shadow-soft hover:shadow-bg-color  p-6 sm:p-8 md:p-10 rounded-xl flex-1 min-w-full md:min-w-[500px]">
                 <h2 className="mb-4 md:mb-5 text-xl sm:text-2xl text-primary">Send me a message</h2>
 
 
@@ -100,25 +100,25 @@ const Contact = () => {
             </div>
 
             {/* Info Box */}
-            <div className="bg-[#1b1e38] p-6 sm:p-8 md:p-10 rounded-xl flex-1 min-w-full md:min-w-[500px]">
+            <div className="bg-[#1b1e3818]  border border-[#2c2e4a]  hover:shadow-soft hover:shadow-bg-color  p-6 sm:p-8 md:p-10 rounded-xl flex-1 min-w-full md:min-w-[500px]">
                 <div className="mb-3 md:mb-4 mt-4 md:mt-5">
                     <div className="inline-flex items-center justify-center bg-cyan-400 w-8 h-8 rounded-full mr-3">
-                        <RiHeadphoneFill className="text-white text-sm" />
+                        <RiHeadphoneFill className="text-black text-sm" />
                     </div>
                     <h3 className="my-2 md:my-3 text-lg text-primary">Get Support</h3>
-                    <p className="text-xs sm:text-sm text-gray-300">If you want to communicate with live support, Skype online contact me.</p>
-                    <span className="text-xs sm:text-sm text-gray-300 block mt-1">Phone Number: 01720415286</span>
-                    <span className="text-xs sm:text-sm text-gray-300 block mt-1">Phone Number: 01568552746</span>
+                    <p className="text-xs sm:text-sm  text-secondary">If you want to communicate with live support, Skype online contact me.</p>
+                    <span className="text-xs sm:text-sm text-gray-300 block mt-1 text-gray">Phone Number: 01720415286</span>
+                    <span className="text-xs sm:text-sm text-gray-300 block mt-1 text-gray ">Phone Number: 01568552746</span>
                 </div>
 
                 <div className="mb-3 md:mb-4 mt-4 md:mt-5">
                     <div className="inline-flex items-center justify-center bg-cyan-400 w-8 h-8 rounded-full mr-3">
-                        <RiMailFill className="text-white text-sm" />
+                        <RiMailFill className="text-black text-sm" />
                     </div>
                     <h3 className="my-2 md:my-3 text-lg text-primary">Communication With Mail</h3>
-                    <p className="text-xs sm:text-sm text-gray-300">Please submit your email in my email and please as soon as possible.</p>
-                    <span className="text-xs sm:text-sm text-gray-300 block mt-1">Email Address 01: mdarifjahan138@gmail.com</span>
-                    <span className="text-xs sm:text-sm text-gray-300 block mt-1">Email Address 02: mdarifjahan2004@gmail.com</span>
+                    <p className="text-xs sm:text-sm text-gray-300 text-secondary">Please submit your email in my email and please as soon as possible.</p>
+                    <span className="text-xs sm:text-sm text-gray-300 block mt-1 text-gray">Email Address 01: mdarifjahan138@gmail.com</span>
+                    <span className="text-xs sm:text-sm text-gray-300 block mt-1 text-gray">Email Address 02: mdarifjahan2004@gmail.com</span>
                 </div>
 
                 <div className="mb-3 md:mb-4 mt-4 md:mt-5">
@@ -126,7 +126,7 @@ const Contact = () => {
                         <RiChat1Fill className="text-black text-sm" />
                     </div>
                     <h3 className="my-2 md:my-3 text-lg text-primary">Want to Chat Now?</h3>
-                    <p className="text-xs sm:text-sm text-gray-300">Chat with me to find more answers or find out more and more informative.</p>
+                    <p className="text-xs sm:text-sm text-gray-300 text-secondary">Chat with me to find more answers or find out more and more informative.</p>
                     <button className="py-2 sm:py-3 px-4 sm:px-5 bg-cyan-400 text-black border-none rounded-3xl cursor-pointer font-bold inline-flex items-center gap-2 hover:bg-cyan-300 transition-colors mt-2 sm:mt-3 text-sm sm:text-base">
                         Open Chat With Me <RiArrowRightLine className="text-sm" />
                     </button>
