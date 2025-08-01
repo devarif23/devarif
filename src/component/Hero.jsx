@@ -144,7 +144,7 @@ const Hero = () => {
 
   {/* Twitter/X */}
   <a
-    href="https://x.com/ArifJahan30/"
+    href="https://x.com/devarif23"
     target="_blank"
     rel="noopener noreferrer"
     className="p-3 rounded-full border-2 border-gray-300 dark:border-gray-600 hover:border-black dark:hover:border-white hover:bg-gray-200 dark:hover:bg-gray-700 transition-all duration-300 group cursor-pointer hover:scale-105 hover:shadow-md hover:shadow-gray-500/20"
@@ -154,7 +154,7 @@ const Hero = () => {
 
   {/* LinkedIn */}
   <a
-    href="https://linkedin.com/in/your-profile"
+    href="https://www.linkedin.com/in/devarif23/"
     target="_blank"
     rel="noopener noreferrer"
     className="p-3 rounded-full border-2 border-gray-300 dark:border-gray-600 hover:border-blue-500 hover:bg-blue-100 dark:hover:bg-blue-900/30 transition-all duration-300 group cursor-pointer hover:scale-105 hover:shadow-md hover:shadow-blue-500/20"
@@ -162,7 +162,7 @@ const Hero = () => {
     <FaLinkedinIn className="text-gray-700 dark:text-gray-300 group-hover:text-blue-600 text-xl md:text-2xl transition-colors duration-300" />
   </a>
   <a
-    href="https://linkedin.com/in/your-profile"
+    href="https://www.pinterest.com/mdarifjahan90"
     target="_blank"
     rel="noopener noreferrer"
     className="p-3 rounded-full border-2 border-gray-300 dark:border-gray-600 hover:border-blue-500 hover:bg-gray-200 dark:hover:bg-blue-900/30 transition-all duration-300 group cursor-pointer hover:scale-105 hover:shadow-md hover:shadow-blue-500/20"
