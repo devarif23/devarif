@@ -1,9 +1,8 @@
-
 import { HiAcademicCap } from "react-icons/hi2";
 import { FaBookOpen, FaLaptopCode } from "react-icons/fa";
 import { BiSolidBookAlt } from "react-icons/bi";
 import { PiNotebookFill } from "react-icons/pi";
-import { motion } from "framer-motion";
+//import { motion } from "framer-motion";
 
 const EducationSkillsSection = () => {
   const skills = [
@@ -12,7 +11,7 @@ const EducationSkillsSection = () => {
     { name: "JavaScript", level: 50, color: "#67E8F9" },
     { name: "Java", level: 43, color: "#67E8F9" },
     { name: "Canva", level: 57, color: "#67E8F9" },
-    { name: "Figma", level: 44, color:"#67E8F9" },
+    { name: "Figma", level: 44, color: "#67E8F9" },
   ];
 
   const education = [
@@ -24,13 +23,15 @@ const EducationSkillsSection = () => {
   return (
     <div className="max-w-6xl mx-auto px-6">
       <div className="flex flex-col lg:flex-row gap-8">
-        {/* Education Card */}
+        
+        {/* 🎓 Education Card */}
         <motion.div 
           initial={{ opacity: 0, x: -20 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
-          className="flex-1 border border-secondary rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
+          className="flex-1 border border-secondary rounded-xl shadow-lg overflow-hidden 
+                     transition-all duration-300 hover:shadow-xl hover:-translate-y-1 bg-[#1f2937]"
         >
           <div className="bg-secondary p-4">
             <h3 className="text-xl uppercase font-bold text-black flex items-center gap-2">
@@ -41,25 +42,26 @@ const EducationSkillsSection = () => {
           <div className="p-6 space-y-6">
             {education.map((item, index) => (
               <div key={index} className="flex gap-4 items-start">
-                <div className="p-3 rounded-full text-secondary">
+                <div className="p-3 rounded-full text-secondary bg-gray-800">
                   {item.icon}
                 </div>
                 <div>
-                  <p className="text-sm text-white">{item.year}</p>
-                  <h4 className="text-lg font-semibold text-gray">{item.title}</h4>
+                  <p className="text-sm text-gray-300">{item.year}</p>
+                  <h4 className="text-lg font-semibold text-white">{item.title}</h4>
                 </div>
               </div>
             ))}
           </div>
         </motion.div>
 
-        {/* Skills Card */}
+        {/* 💻 Skills Card */}
         <motion.div 
-          initial={{ opacity: 0, x: -20 }}
+          initial={{ opacity: 0, x: 20 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
-          className="flex-1 border border-secondary rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
+          className="flex-1 border border-secondary rounded-xl shadow-lg overflow-hidden 
+                     transition-all duration-300 hover:shadow-xl hover:-translate-y-1 bg-[#1f2937]"
         >
           <div className="bg-secondary p-4">
             <h3 className="text-xl uppercase font-bold text-black flex items-center gap-2">
@@ -79,10 +81,10 @@ const EducationSkillsSection = () => {
                     initial={{ width: 0 }}
                     whileInView={{ width: `${skill.level}%` }}
                     transition={{ 
-                      duration: 0.5,
-                      delay: index * 0.1,
+                      duration: 0.6,
+                      delay: index * 0.15,
                       type: "spring",
-                      damping: 4,
+                      damping: 6,
                       stiffness: 100
                     }}
                     viewport={{ once: true }}

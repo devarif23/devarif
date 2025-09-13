@@ -1,12 +1,13 @@
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
-import Work from "./Work";
 import { FaFacebookF, FaGithub, FaInstagram, FaLinkedinIn, FaPinterest } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { useEffect } from "react";
 
+/* import animationData from "../assets/animation.json";  */// 👉 এখানে তোমার JSON ফাইল path দাও
+
 const Hero = () => {
-    useEffect(() => {
+  useEffect(() => {
     // 👉 রাইট ক্লিক বন্ধ
     const handleContextMenu = (e) => {
       e.preventDefault();
@@ -15,10 +16,7 @@ const Hero = () => {
 
     // 👉 Ctrl+C, Ctrl+U, Ctrl+S ইত্যাদি বন্ধ
     const handleKeyDown = (e) => {
-      if (
-        e.ctrlKey &&
-        ["c", "u", "s", "a"].includes(e.key.toLowerCase())
-      ) {
+      if (e.ctrlKey && ["c", "u", "s", "a"].includes(e.key.toLowerCase())) {
         e.preventDefault();
       }
     };
@@ -29,30 +27,27 @@ const Hero = () => {
       document.removeEventListener("keydown", handleKeyDown);
     };
   }, []);
+
   return (
     <>
-      <section className=" w-full max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="w-full max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex flex-wrap justify-between items-center relative px-4">
+          <img
+            src="/react1.png"
+            alt="React Logo"
+            className="w-[250px] md:w-[350px] lg:w-[410px] absolute z-[-50] top-[40px] md:top-[70px] md:left-[66%] left-[20%] -translate-x-1/2 backdrop-opacity-85 animate-slow-spin"
+          />
+        </div>
 
-          <div
-      class=" flex flex-wrap justify-between items-center relative  px-4"
-    >
-   {/*    <!-- Other content (e.g., heading, paragraph, button) --> */}
-
-      <img
-        src="/react1.png"
-        alt="React Logo"
-        class="w-[250px] md:w-[350px] lg:w-[410px] absolute z-[-50] top-[40px] md:top-[70px] md:left-[66%] left-[20%] -translate-x-1/2 backdrop-opacity-85  animate-slow-spin"
-      />
-    </div>
-        <div className="flex flex-col md:flex-row justify-between items-center gap-8 text-primary md:mt-20 lg:mb-20 ">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-8 text-primary md:mt-20 lg:mb-20">
           {/* Left Side Text Content */}
-          <motion.div 
+          <motion.div
             className="order-2 md:order-1 max-w-[600px] md:leading-none"
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <motion.button 
+            <motion.button
               className="mb-4 px-6 py-3 text-body rounded-full text-sm font-medium border border-blue-900"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -65,11 +60,11 @@ const Hero = () => {
             </h1>
 
             <div className="h-10 sm:h-20 md:h-20 flex items-center">
-              <TypeAnimation 
+              <TypeAnimation
                 className="text-secondary text-2xl sm:text-3xl md:text-4xl"
                 sequence={[
                   "Front End Web Developer",
-                1000,
+                  1000,
                   "WordPress Developer",
                   1000,
                 ]}
@@ -80,21 +75,24 @@ const Hero = () => {
               />
             </div>
 
-            <p className="text-gray-400 sm:text-lg mb-6 md:mb-8 md:leading-relaxed font-helvetica  ">
-              From Rangpur, Bangladesh. I'm a Front End Web developer who is passionate about making error-free websites. I am good at WordPress. I love to talk with you about your unique projects.
+            <p className="text-gray-400 sm:text-lg mb-6 md:mb-8 md:leading-relaxed font-helvetica">
+              From Rangpur, Bangladesh. I'm a Front End Web developer who is
+              passionate about making error-free websites. I am good at
+              WordPress. I love to talk with you about your unique projects.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              {/* Button 1 */}
-              <motion.div 
+              {/* CV Button */}
+              <motion.div
                 className="w-full sm:w-auto"
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.97 }}
               >
                 <div className="w-full sm:w-[10.5em] h-[3.0em] relative button mb-4">
                   <a
-                    href="#"
+                    href="/cv.pdf" // 👉 তোমার CV link এখানে দাও
                     className="w-full h-full text-primary border-border bg-neutral-900 border-2 px-4 py-1 font-medium flex justify-center items-center text-base sm:text-lg z-10 relative hover:translate-x-1 hover:translate-y-1 transition-all"
+                    download
                   >
                     Download CV
                   </a>
@@ -102,79 +100,73 @@ const Hero = () => {
                 </div>
               </motion.div>
 
-              {/* Button 2 */}
-             {/*  <motion.div 
-                className=""
-                whileHover={{ scale: 1.03 }}
-                whileTap={{ scale: 0.97 }}
-              >
-              
-              </motion.div> */}
+              {/* Social Links */}
+              <div className="md:w-full flex justify-center md:justify-start items-center gap-3 md:gap-5 ml-0 md:ml-2 flex-wrap">
+                {/* Facebook */}
+                <a
+                  href="https://www.facebook.com/devarif23"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-3 rounded-full border-2 border-gray-300 dark:border-gray-600 hover:border-blue-500 hover:bg-blue-100 dark:hover:bg-blue-900/30 transition-all duration-300 group cursor-pointer hover:scale-105 hover:shadow-md hover:shadow-blue-500/20"
+                >
+                  <FaFacebookF className="text-gray-700 dark:text-gray-300 group-hover:text-blue-600 text-xl md:text-2xl transition-colors duration-300" />
+                </a>
 
-           <div className="md:w-full flex justify-center md:justify-start items-center gap-3 md:gap-5 ml-0 md:ml-2 flex-wrap ">
-  {/* Facebook */}
-  <a
-    href="https://www.facebook.com/devarif23"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="p-3 rounded-full border-2 border-gray-300 dark:border-gray-600 hover:border-blue-500 hover:bg-blue-100 dark:hover:bg-blue-900/30 transition-all duration-300 group cursor-pointer hover:scale-105 hover:shadow-md hover:shadow-blue-500/20"
-  >
-    <FaFacebookF className="text-gray-700 dark:text-gray-300 group-hover:text-blue-600 text-xl md:text-2xl transition-colors duration-300" />
-  </a>
+                {/* Instagram */}
+                <a
+                  href="https://www.instagram.com/devarif23/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-3 rounded-full border-2 border-gray-300 dark:border-gray-600 hover:bg-gradient-to-r from-pink-500 to-purple-500 hover:border-transparent transition-all duration-300 group cursor-pointer hover:scale-105 hover:shadow-md hover:shadow-purple-500/20"
+                >
+                  <FaInstagram className="text-gray-700 dark:text-gray-300 group-hover:text-white text-xl md:text-2xl transition-colors duration-300" />
+                </a>
 
-  {/* Instagram */}
-  <a
-    href="https://www.instagram.com/devarif23/"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="p-3 rounded-full border-2 border-gray-300 dark:border-gray-600 hover:bg-gradient-to-r from-pink-500 to-purple-500 hover:border-transparent transition-all duration-300 group cursor-pointer hover:scale-105 hover:shadow-md hover:shadow-purple-500/20"
-  >
-    <FaInstagram className="text-gray-700 dark:text-gray-300 group-hover:text-white text-xl md:text-2xl transition-colors duration-300" />
-  </a>
+                {/* GitHub */}
+                <a
+                  href="https://github.com/devarif23"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-3 rounded-full border-2 border-gray-300 dark:border-gray-600 hover:border-gray-800 hover:bg-gray-100 dark:hover:bg-gray-800/30 transition-all duration-300 group cursor-pointer hover:scale-105 hover:shadow-md hover:shadow-gray-500/20"
+                >
+                  <FaGithub className="text-gray-700 dark:text-gray-300 group-hover:text-black dark:group-hover:text-white text-xl md:text-2xl transition-colors duration-300" />
+                </a>
 
-  {/* GitHub */}
-  <a
-    href="https://github.com/devarif23"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="p-3 rounded-full border-2 border-gray-300 dark:border-gray-600 hover:border-gray-800 hover:bg-gray-100 dark:hover:bg-gray-800/30 transition-all duration-300 group cursor-pointer hover:scale-105 hover:shadow-md hover:shadow-gray-500/20"
-  >
-    <FaGithub className="text-gray-700 dark:text-gray-300 group-hover:text-black dark:group-hover:text-white text-xl md:text-2xl transition-colors duration-300" />
-  </a>
+                {/* Twitter/X */}
+                <a
+                  href="https://x.com/devarif23"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-3 rounded-full border-2 border-gray-300 dark:border-gray-600 hover:border-black dark:hover:border-white hover:bg-gray-200 dark:hover:bg-gray-700 transition-all duration-300 group cursor-pointer hover:scale-105 hover:shadow-md hover:shadow-gray-500/20"
+                >
+                  <FaXTwitter className="text-gray-700 dark:text-gray-300 group-hover:text-black dark:group-hover:text-white text-xl md:text-2xl transition-colors duration-300" />
+                </a>
 
-  {/* Twitter/X */}
-  <a
-    href="https://x.com/devarif23"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="p-3 rounded-full border-2 border-gray-300 dark:border-gray-600 hover:border-black dark:hover:border-white hover:bg-gray-200 dark:hover:bg-gray-700 transition-all duration-300 group cursor-pointer hover:scale-105 hover:shadow-md hover:shadow-gray-500/20"
-  >
-    <FaXTwitter className="text-gray-700 dark:text-gray-300 group-hover:text-black dark:group-hover:text-white text-xl md:text-2xl transition-colors duration-300" />
-  </a>
+                {/* LinkedIn */}
+                <a
+                  href="https://www.linkedin.com/in/devarif23/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-3 rounded-full border-2 border-gray-300 dark:border-gray-600 hover:border-blue-500 hover:bg-blue-100 dark:hover:bg-blue-900/30 transition-all duration-300 group cursor-pointer hover:scale-105 hover:shadow-md hover:shadow-blue-500/20"
+                >
+                  <FaLinkedinIn className="text-gray-700 dark:text-gray-300 group-hover:text-blue-600 text-xl md:text-2xl transition-colors duration-300" />
+                </a>
 
-  {/* LinkedIn */}
-  <a
-    href="https://www.linkedin.com/in/devarif23/"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="p-3 rounded-full border-2 border-gray-300 dark:border-gray-600 hover:border-blue-500 hover:bg-blue-100 dark:hover:bg-blue-900/30 transition-all duration-300 group cursor-pointer hover:scale-105 hover:shadow-md hover:shadow-blue-500/20"
-  >
-    <FaLinkedinIn className="text-gray-700 dark:text-gray-300 group-hover:text-blue-600 text-xl md:text-2xl transition-colors duration-300" />
-  </a>
-  <a
-    href="https://www.pinterest.com/mdarifjahan90"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="p-3 rounded-full border-2 border-gray-300 dark:border-gray-600 hover:border-blue-500 hover:bg-gray-200 dark:hover:bg-blue-900/30 transition-all duration-300 group cursor-pointer hover:scale-105 hover:shadow-md hover:shadow-blue-500/20"
-  >
-    <FaPinterest className="text-gray-700 dark:text-gray-300 group-hover:text-[#E60023] text-xl md:text-2xl transition-colors duration-300" />
-  </a>
-</div>
+                {/* Pinterest */}
+                <a
+                  href="https://www.pinterest.com/mdarifjahan90"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-3 rounded-full border-2 border-gray-300 dark:border-gray-600 hover:border-blue-500 hover:bg-gray-200 dark:hover:bg-blue-900/30 transition-all duration-300 group cursor-pointer hover:scale-105 hover:shadow-md hover:shadow-blue-500/20"
+                >
+                  <FaPinterest className="text-gray-700 dark:text-gray-300 group-hover:text-[#E60023] text-xl md:text-2xl transition-colors duration-300" />
+                </a>
+              </div>
             </div>
           </motion.div>
 
           {/* Right Side Image */}
-          <motion.div 
+          <motion.div
             className="order-1 md:order-2 w-full max-w-[280px] sm:max-w-[350px] md:max-w-[400px] lg:max-w-[450px]"
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
@@ -190,6 +182,10 @@ const Hero = () => {
         </div>
       </section>
 
+      {/* Lottie Animation */}
+   {/*    <div className="flex justify-center items-center my-10">
+        <Lottie animationData={animationData} loop={true} style={{ width: 400, height: 400 }} />
+      </div> */}
     </>
   );
 };
