@@ -15,7 +15,7 @@ const Navbar = () => {
           {/* Logo */}
           <div className="flex items-center space-x-2">
             <Link to="/">
-              <h1 className="text-primary text-xl font-helvetica font-bold">arifjahan</h1>
+              <h1 className="text-xl font-bold text-primary font-helvetica">arifjahan</h1>
             </Link>
           </div>
 
@@ -47,11 +47,11 @@ const Navbar = () => {
           </div>
 
           {/* Desktop Menu Items */}
-          <ul className="hidden lg:flex lg:items-center lg:space-x-6 text-sm">
+          <ul className="hidden text-sm lg:flex lg:items-center lg:space-x-6">
             <li>
               <Link
                 to="/"
-                className="nav-glow relative hover:text-primary text-white block py-2 lg:py-0 font-mont"
+                className="relative block py-2 text-white nav-glow hover:text-primary lg:py-0 font-mont"
               >
                 Home
               </Link>
@@ -59,7 +59,7 @@ const Navbar = () => {
             <li>
               <Link
                 to="/Service-page"
-                className="nav-glow relative font-mont hover:text-primary text-white block py-2 lg:py-0"
+                className="relative block py-2 text-white nav-glow font-mont hover:text-primary lg:py-0"
               >
                 Service
               </Link>
@@ -67,31 +67,31 @@ const Navbar = () => {
             <li>
               <Link
                 to="/Protfolio-page"
-                className="nav-glow relative font-mont hover:text-primary text-white block py-2 lg:py-0"
+                className="relative block py-2 text-white nav-glow font-mont hover:text-primary lg:py-0"
               >
                 Portfolio
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link
                 to="/blog-page"
-                className="nav-glow relative font-mont hover:text-primary text-white block py-2 lg:py-0"
+                className="relative block py-2 text-white nav-glow font-mont hover:text-primary lg:py-0"
               >
                Blog
               </Link>
-            </li>
-            <li>
+            </li> */}
+            {/* <li>
               <Link
                 to="/About-page"
-                className="nav-glow relative font-mont hover:text-primary text-white block py-2 lg:py-0"
+                className="relative block py-2 text-white nav-glow font-mont hover:text-primary lg:py-0"
               >
                 About
               </Link>
-            </li>
+            </li> */}
            {/*  <li>
               <Link
                 to="#blog"
-                className="nav-glow relative font-mont hover:text-primary text-white block py-2 lg:py-0"
+                className="relative block py-2 text-white nav-glow font-mont hover:text-primary lg:py-0"
               >
                 Blog
               </Link>
@@ -99,15 +99,15 @@ const Navbar = () => {
             <li>
               <Link
                 to="/Contatc-page"
-                className="nav-glow relative font-mont hover:text-primary text-white block py-2 lg:py-0"
+                className="relative block py-2 text-white nav-glow font-mont hover:text-primary lg:py-0"
               >
                 Contact
               </Link>
             </li>
-            <li className="hidden lg:flex space-x-2 rtl:space-x-reverse">
+            <li className="hidden space-x-2 lg:flex rtl:space-x-reverse">
               <Link
                 to="https://github.com/devarif420"
-                className="px-4 py-2 bg-primary md:hover:bg-body md:hover:text-secondary md:hover:border md:border font-mont rounded-full text-sm text-center border-primary transition delay-75 duration-300 ease-in-out"
+                className="px-4 py-2 text-sm text-center transition duration-300 ease-in-out delay-75 rounded-full bg-primary md:hover:bg-body md:hover:text-secondary md:hover:border md:border font-mont border-primary"
               >
                 GitHub
               </Link>
@@ -126,7 +126,7 @@ const Navbar = () => {
               open ? "translate-x-0" : "translate-x-full"
             }`}
           >
-            <div className="p-4 flex justify-end">
+            <div className="flex justify-end p-4">
               <button onClick={handleToggle} className="text-white">
                 <IoMdClose className="w-6 h-6 text-[#87F5FF]" />
               </button>
@@ -135,7 +135,7 @@ const Navbar = () => {
               <li>
                 <Link
                   to="/"
-                  className="nav-glow relative hover:text-primary text-white block py-2 font-mont"
+                  className="relative block py-2 text-white nav-glow hover:text-primary font-mont"
                   onClick={() => setOpen(false)}
                 >
                   Home
@@ -144,7 +144,7 @@ const Navbar = () => {
               <li>
                 <Link
                   to="/Service-page"
-                  className="nav-glow relative font-mont hover:text-primary text-white block py-2"
+                  className="relative block py-2 text-white nav-glow font-mont hover:text-primary"
                   onClick={() => setOpen(false)}
                 >
                   Service
@@ -153,35 +153,35 @@ const Navbar = () => {
               <li>
                 <Link
                   to="/Protfolio-page"
-                  className="nav-glow relative font-mont hover:text-primary text-white block py-2"
+                  className="relative block py-2 text-white nav-glow font-mont hover:text-primary"
                   onClick={() => setOpen(false)}
                 >
                   Portfolio
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link
                   to="/blog-page"
-                  className="nav-glow relative font-mont hover:text-primary text-white block py-2"
+                  className="relative block py-2 text-white nav-glow font-mont hover:text-primary"
                   onClick={() => setOpen(false)}
                 >
                  Blog
                 </Link>
-              </li>
-              <li>
+              </li> */}
+              {/* <li>
                 <Link
                   to="/About-page"
-                  className="nav-glow relative font-mont hover:text-primary text-white block py-2"
+                  className="relative block py-2 text-white nav-glow font-mont hover:text-primary"
                   onClick={() => setOpen(false)}
                 >
                   About
                 </Link>
-              </li>
+              </li> */}
           
               <li>
                 <Link
                   to="/Contatc-page"
-                  className="nav-glow relative font-mont hover:text-primary text-white block py-2"
+                  className="relative block py-2 text-white nav-glow font-mont hover:text-primary"
                   onClick={() => setOpen(false)}
                 >
                   Contact
@@ -190,7 +190,7 @@ const Navbar = () => {
               <li className="mt-4">
                 <Link
                   to="#"
-                  className="px-4 py-2 bg-primary text-black font-normal rounded-full text-sm text-center font-mont transition delay-75 duration-300 ease-in-out border-1 hover:bg-body hover:text-primary hover:border-primary block"
+                  className="block px-4 py-2 text-sm font-normal text-center text-black transition duration-300 ease-in-out delay-75 rounded-full bg-primary font-mont border-1 hover:bg-body hover:text-primary hover:border-primary"
                   onClick={() => setOpen(false)}
                 >
                  GitHub

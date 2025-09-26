@@ -56,7 +56,7 @@ const Portfolio = () => {
       {
         projectNumber: "Project 1",
         title: "Branding Nice Studio",
-        description: "The technological revolution is changing aspect of our lives, and the fabric of society itself. It's also changing the way we learn and what we learn.",
+        description: "A modern, responsive portfolio website built with HTML & CSS. It showcases personal details, skills, services, projects, client feedback, and contact information in a clean and professional layout",
         image: "/protfolio-demo.jpg",
         demoLink: "https://astonishing-bubblegum-d9818b.netlify.app/",
         readMoreLink: "#project1-details"
@@ -73,11 +73,11 @@ const Portfolio = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900 py-12 px-4 md:px-8">
+    <div className="min-h-screen px-4 py-12 bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900 md:px-8">
       {/* Header Section */}
       <div className="max-w-6xl mx-auto">
-        <div className="mt-10 md:mb-10 flex flex-col justify-center items-center">
-          <div className="relative px-6 py-4 mb-6 mt-6">
+        <div className="flex flex-col items-center justify-center mt-10 md:mb-10">
+          <div className="relative px-6 py-4 mt-6 mb-6">
             <h1 className="text-sm font-normal text-[#5DF4A0]">
               {portfolioContent.header.subtitle}
             </h1>
@@ -88,13 +88,13 @@ const Portfolio = () => {
             <div className="absolute bottom-2 left-0 w-3 h-3 border-b-2 border-l-2 border-[#5DF4A0]"></div>
             <div className="absolute bottom-2 right-0 w-3 h-3 border-b-2 border-r-2 border-[#5DF4A0]"></div>
           </div>
-          <h1 className="md:text-5xl text-3xl text-white font-bold text-center">
+          <h1 className="text-3xl font-bold text-center text-white md:text-5xl">
             {portfolioContent.header.title}
           </h1>
         </div>
 
         {/* Projects Section */}
-        <div className="space-y-20 md:space-y-32 mt-16">
+        <div className="mt-16 space-y-20 md:space-y-32">
           {portfolioContent.projects.map((project, index) => (
             <div 
               key={index}
@@ -108,7 +108,7 @@ const Portfolio = () => {
                 <div className="absolute -inset-3 bg-[#090925] rounded-2xl blur-xl opacity-70 animate-pulse"></div>
                 
                 {/* Image with hover animation */}
-                <div className="relative z-10 transform transition-all duration-500 ">
+                <div className="relative z-10 transition-all duration-500 transform ">
                   <img
                     className="rounded-2xl shadow-lg transition-all duration-500 group-hover:shadow-[#5DF4A0]/20"
                     src={project.image}
@@ -118,14 +118,14 @@ const Portfolio = () => {
               </div>
 
               {/* Text Block */}
-              <div className="text-white w-full md:w-1/2">
+              <div className="w-full text-white md:w-1/2">
                 <span className="text-[#5DF4A0] text-sm font-semibold">
                   {project.projectNumber}
                 </span>
                 <h1 className="text-2xl md:text-4xl font-light my-3 transition-all duration-300 group-hover:text-[#5DF4A0]">
                   {project.title}
                 </h1>
-                <p className="text-sm md:text-base text-gray-300 leading-relaxed my-5">
+                <p className="my-5 text-sm leading-relaxed text-gray-300 md:text-base">
                   {project.description}
                 </p>
                 
@@ -136,7 +136,7 @@ const Portfolio = () => {
                     href={project.demoLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-5 py-3 bg-green-600 text-white rounded-md transition-all duration-300 hover:bg-green-700 hover:shadow-lg hover:shadow-green-500/30 group-hover:gap-3"
+                    className="inline-flex items-center gap-2 px-5 py-3 text-white transition-all duration-300 bg-green-600 rounded-md hover:bg-green-700 hover:shadow-lg hover:shadow-green-500/30 group-hover:gap-3"
                   >
                     <AiOutlineEye className="text-lg transition-transform duration-300 group-hover:scale-110" />
                     <span>Live Demo</span>
@@ -145,7 +145,7 @@ const Portfolio = () => {
                   {/* Read More Button */}
                   <a
                     href={project.readMoreLink}
-                    className="inline-flex items-center gap-2 px-5 py-3 text-yellow-300 border border-yellow-300 rounded-md transition-all duration-300 hover:bg-yellow-300 hover:text-gray-900 group-hover:gap-3"
+                    className="inline-flex items-center gap-2 px-5 py-3 text-yellow-300 transition-all duration-300 border border-yellow-300 rounded-md hover:bg-yellow-300 hover:text-gray-900 group-hover:gap-3"
                   >
                     <span>Read More</span>
                     <AiOutlineArrowRight className="transition-transform duration-300 group-hover:translate-x-1" />

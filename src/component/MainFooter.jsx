@@ -7,24 +7,24 @@ const MainFooter = () => {
        
 
 
-<footer className="bg-gray-900 md:w-full text-white py-12 md:mt-32 px-4 sm:px-6 lg:px-8 ">
-  <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<footer className="px-4 py-12 text-white bg-slate-950 md:w-full md:mt-32 sm:px-6 lg:px-8 ">
+  <div className="grid grid-cols-1 gap-8 mx-auto max-w-7xl md:grid-cols-2 lg:grid-cols-4">
     
  
     {<div className="space-y-4">
       <h3 className="text-xl font-bold">ARIFJAHAN</h3>
-      <p className="text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.</p>
+      <p className="text-gray-400">Front-End Web Developer || React.JS || Tailwind CSS || WordPress Site Builder</p>
       <div className="flex space-x-4">
-        <a href="#" className="text-gray-400 hover:text-white transition">
+        <a href="https://www.facebook.com/devarif23" className="text-gray-400 transition hover:text-white">
           <FaFacebookF />
         </a>
-        <a href="#" className="text-gray-400 hover:text-white transition">
+        <a href="https://github.com/devarif23" className="text-gray-400 transition hover:text-white">
           <FaGithub />
         </a>
-        <a href="#" className="text-gray-400 hover:text-white transition">
+        <a href="https://www.instagram.com/devarif23/" className="text-gray-400 transition hover:text-white">
           <FaInstagram/>
         </a>
-        <a href="#" className="text-gray-400 hover:text-white transition">
+        <a href="#https://www.linkedin.com/in/devarif23/" className="text-gray-400 transition hover:text-white">
          <FaLinkedin/>
         </a>
       </div>
@@ -34,10 +34,10 @@ const MainFooter = () => {
     <div className="space-y-4">
       <h3 className="text-xl font-bold">Quick Links</h3>
       <ul className="space-y-2">
-        <li><a href="#" className="text-gray-400 hover:text-white transition">Home</a></li>
-        <li><a href="#" className="text-gray-400 hover:text-white transition">About Us</a></li>
-        <li><a href="#" className="text-gray-400 hover:text-white transition">Services</a></li>
-        <li><a href="#" className="text-gray-400 hover:text-white transition">Contact</a></li>
+        <li><a href="/" className="text-gray-400 transition hover:text-white">Home</a></li>
+        {/* <li><a href="#" className="text-gray-400 transition hover:text-white">About Us</a></li> */}
+        <li><a href="/Service-page" className="text-gray-400 transition hover:text-white">Services</a></li>
+        <li><a href="/Contatc-page" className="text-gray-400 transition hover:text-white">Contact</a></li>
       </ul>
     </div>
 
@@ -45,10 +45,10 @@ const MainFooter = () => {
     <div className="space-y-4">
       <h3 className="text-xl font-bold">Services</h3>
       <ul className="space-y-2">
-        <li><a href="#" className="text-gray-400 hover:text-white transition">Web Design</a></li>
-        <li><a href="#" className="text-gray-400 hover:text-white transition">Development</a></li>
-        <li><a href="#" className="text-gray-400 hover:text-white transition">WoordPress Developer</a></li>
-       {/*  <li><a href="#" className="text-gray-400 hover:text-white transition">Marketing</a></li> */}
+        <li><a href="#" className="text-gray-400 transition hover:text-white">Web Design</a></li>
+        <li><a href="#" className="text-gray-400 transition hover:text-white">Development</a></li>
+        <li><a href="#" className="text-gray-400 transition hover:text-white">WoordPress Developer</a></li>
+       {/*  <li><a href="#" className="text-gray-400 transition hover:text-white">Marketing</a></li> */}
       </ul>
     </div>
 
@@ -73,8 +73,8 @@ const MainFooter = () => {
   </div>
 
 {/*   <!-- Copyright --> */}
-  <div className="max-w-7xl mx-auto mt-12 pt-6 border-t border-gray-800 text-center text-gray-500">
-    <p>&copy; 2024 Your Company. All Rights Reserved.</p>
+  <div className="pt-6 mx-auto mt-12 text-center text-gray-500 border-t border-gray-800 max-w-7xl">
+    <p>&copy;2024 Arif Jahan. All Rights Reserved.</p>
   </div>
 </footer>
         </>
