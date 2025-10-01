@@ -80,14 +80,15 @@ const Navbar = () => {
                Blog
               </Link>
             </li> */}
-            {/* <li>
-              <Link
-                to="/About-page"
-                className="relative block py-2 text-white nav-glow font-mont hover:text-primary lg:py-0"
-              >
-                About
-              </Link>
-            </li> */}
+              <li>
+                <Link
+                  to="/About-page"
+                  className="relative block py-2 text-white nav-glow font-mont hover:text-primary"
+                  onClick={() => setOpen(false)}
+                >
+                  About
+                </Link>
+              </li>
            {/*  <li>
               <Link
                 to="#blog"
@@ -159,7 +160,7 @@ const Navbar = () => {
                   Portfolio
                 </Link>
               </li>
-              {/* <li>
+              <li>
                 <Link
                   to="/blog-page"
                   className="relative block py-2 text-white nav-glow font-mont hover:text-primary"
@@ -167,8 +168,8 @@ const Navbar = () => {
                 >
                  Blog
                 </Link>
-              </li> */}
-              {/* <li>
+              </li>
+              <li>
                 <Link
                   to="/About-page"
                   className="relative block py-2 text-white nav-glow font-mont hover:text-primary"
@@ -176,7 +177,7 @@ const Navbar = () => {
                 >
                   About
                 </Link>
-              </li> */}
+              </li>
           
               <li>
                 <Link
