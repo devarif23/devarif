@@ -40,27 +40,7 @@ const services = [
         <>
 
 <div id="service">
-  
-  <div id="" className="mt-3 md:mb-10 flex flex-col justify-center items-center px-8">
-        <div className="relative px-4 py-4 mb-4 mt-6">
-          <h1 className="text-sm font-normal font-mont text-primary">My Specializations Services</h1>
-      
-         {/*  <!-- Top-left corner --> */}
-          <div className="absolute top-2 left-0 w-3 h-3 border-t-2 border-l-2 border-border"></div>
-          {/* <!-- Top-right corner --> */}
-          <div className="absolute top-2 right-0 w-3 h-3 border-t-2 border-r-2 border-border"></div>
-         {/*  <!-- Bottom-left corner --> */}
-          <div className="absolute bottom-2 left-0 w-3 h-3 border-b-2 border-l-2 border-border"></div>
-       {/*    <!-- Bottom-right corner --> */}
-          <div className="absolute bottom-2 right-0 w-3 h-3 border-b-2 border-r-2 border-border"></div>
-        </div>
-        <h1 className="md:text-5xl text-3xl text-white font-mont font-bold text-center">What I Do</h1>
 
-        <p className="text-gray mt-3  text-center font-montserrat ">
-          Develop comprehensive content strategies tailored to your unique goals <br />
-d and target audience, ensuring that every piece of content.
-        </p>
-      </div>
 
 
 

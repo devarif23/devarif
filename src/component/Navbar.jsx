@@ -11,6 +11,7 @@ import {
   HiViewGrid,
   HiX
 } from "react-icons/hi";
+import { HiAcademicCap } from "react-icons/hi2";
 
 const GradientNavbar = () => {
   const location = useLocation();
@@ -25,6 +26,7 @@ const GradientNavbar = () => {
     { path: "/Protfolio-page", label: "Portfolio", icon: HiViewGrid },
     { path: "/About-page", label: "About", icon: HiUser },
     { path: "/Contatc-page", label: "Contact", icon: HiMail },
+    // { path: "/Test-page", label: "Test", icon: HiBell },
   ];
 
   const handleTabClick = (path) => {

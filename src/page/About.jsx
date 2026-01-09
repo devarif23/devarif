@@ -1,7 +1,7 @@
 import { HiEnvelopeOpen } from "react-icons/hi2";
 import { BiSolidPhoneCall } from "react-icons/bi";
 import { useEffect } from "react";
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 import EducationSkillsSection from "../component/EducationSkillsSection.jsx";
 
 const About = () => {

@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { RiHeadphoneFill, RiMailFill, RiChat1Fill, RiArrowRightLine } from "react-icons/ri";
+// import DotGrid from "../component/DotGrid";
 
 const Contact = () => {
         /* ========== from daynamic ============ */
@@ -50,9 +51,24 @@ const Contact = () => {
         <h1 className="md:text-5xl text-3xl text-white font-mont font-bold text-center">Contact With Me</h1>
       </div>
 
+
+{/* animetion */}
+<div >
+
+
+
+</div>
+{/* animetion */}
       
 
-        <div id="contact" className="max-w-[1200px] mx-auto flex flex-wrap gap-6 lg:gap-8 mb-12 mt-12 md:mb-16 lg:mb-20 px-4 sm:px-5">
+        <div id="contact" className="max-w-[1200px] mx-auto flex flex-wrap gap-6 lg:gap-8 mb-12 mt-12 md:mb-16 lg:mb-20 px-4 sm:px-5"
+        
+        // 
+       
+        
+        
+        
+        >
             {/* Form Box */}
             <div className="bg-[#1b1e3818] border border-[#2c2e4a] hover:shadow-soft hover:shadow-bg-color  p-6 sm:p-8 md:p-10 rounded-xl flex-1 min-w-full md:min-w-[500px]">
                 <h2 className="mb-4 md:mb-5 text-xl sm:text-2xl text-primary">Send me a message</h2>

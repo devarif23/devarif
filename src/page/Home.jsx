@@ -35,6 +35,7 @@ const Home = () => {
         <div>
            
            <Hero/>
+           
            {/* ======================================================= */}
              
   <div id="" className="flex flex-col items-center justify-center px-8 mt-3 md:mb-10">

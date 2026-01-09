@@ -13,6 +13,8 @@ import About from './page/About';
 import Service from './component/Service';
 import Contact from './page/Contact';
 import SinggelBlog from './component/SinggelBlog';
+// import Test from './page/Test';
+// import Test from './page/Test';
 
 
 
@@ -51,7 +53,11 @@ const router = createBrowserRouter([
     {
       path: '/Contatc-page',
       element:<Contact/>,
-    }
+    },
+    // {
+    //   path: '/Test-page',
+    //   element:<Test/>,
+    // }
       
     ]
   },
