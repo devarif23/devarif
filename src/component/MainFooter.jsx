@@ -7,7 +7,7 @@ const MainFooter = () => {
        
 
 
-<footer className="px-4 py-12 text-white bg-slate-950 md:w-full md:mt-32 sm:px-6 lg:px-8 ">
+<footer className="px-4 py-12 text-white bg-slate-900 md:w-full md:mt-32 sm:px-6 lg:px-8 ">
   <div className="grid grid-cols-1 gap-8 mx-auto max-w-7xl md:grid-cols-2 lg:grid-cols-4">
     
  

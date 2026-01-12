@@ -114,7 +114,7 @@ const GradientNavbar = () => {
             </div>
 
             {/* Right Side with Icons & Animation */}
-            <div className="items-center hidden space-x-3 lg:flex">
+            {/* <div className="items-center hidden space-x-3 lg:flex">
               <button className="p-2 text-white/80 hover:text-[#0F475D] transition-all duration-500 hover:scale-110 hover:bg-[#0F475D]/10 rounded-lg border border-transparent hover:border-[#0F475D]/30">
                 <HiSearch className="w-5 h-5 transition-transform duration-500 hover:scale-110" />
               </button>
@@ -126,7 +126,7 @@ const GradientNavbar = () => {
                   <span className="text-sm font-semibold text-white">we</span>
                 </div>
               </button>
-            </div>
+            </div> */}
 
             {/* Mobile Menu Button with Animation */}
             <button 

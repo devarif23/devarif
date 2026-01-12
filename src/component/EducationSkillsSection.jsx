@@ -2,7 +2,7 @@ import { HiAcademicCap } from "react-icons/hi2";
 import { FaBookOpen, FaLaptopCode } from "react-icons/fa";
 import { BiSolidBookAlt } from "react-icons/bi";
 import { PiNotebookFill } from "react-icons/pi";
-// import { motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 const EducationSkillsSection = () => {
   const skills = [
@@ -46,8 +46,8 @@ const EducationSkillsSection = () => {
                   {item.icon}
                 </div>
                 <div>
-                  <p className="text-sm text-gray-300">{item.year}</p>
-                  <h4 className="text-lg font-semibold text-white">{item.title}</h4>
+                  <p className="text-sm  text-white ">{item.year}</p>
+                  <h4 className="text-lg font-semibold text-secondary">{item.title}</h4>
                 </div>
               </div>
             ))}
