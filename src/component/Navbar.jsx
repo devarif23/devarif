@@ -74,7 +74,7 @@ const GradientNavbar = () => {
                 {/* <span className="text-lg font-bold text-white">AJ</span> */}
               {/* </div> */}
               {/* <span className="text-2xl font-bold text-white transition-all duration-500 hover:text-[#0F475D]"> */}
-               <img src="/public/arifjahan.png" width={200} className="items-center" alt="" />
+               <img src="/arifjahan.png" width={200} className="items-center" alt="" />
               {/* </span> */}
             </Link>
 
