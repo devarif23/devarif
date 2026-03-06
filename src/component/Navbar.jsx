@@ -68,14 +68,14 @@ const GradientNavbar = () => {
             {/* Logo with Animation */}
             <Link 
               to="/" 
-              className="flex items-center space-x-3 transition-all duration-500 hover:scale-105"
+              className="flex  items-center transition-all duration-500 hover:scale-105 mt-2"
             >
-              <div className="w-10 h-10 bg-gradient-to-br from-[#0F475D] to-[#080C20] rounded-lg flex items-center justify-center shadow-lg shadow-[#0F475D]/30 transition-all duration-500 hover:rotate-12">
-                <span className="text-lg font-bold text-white">AJ</span>
-              </div>
-              <span className="text-2xl font-bold text-white transition-all duration-500 hover:text-[#0F475D]">
-                arifjahan
-              </span>
+              {/* <div className="w-10 h-10 bg-gradient-to-br from-[#0F475D] to-[#080C20] rounded-lg flex items-center justify-center shadow-lg shadow-[#0F475D]/30 transition-all duration-500 hover:rotate-12"> */}
+                {/* <span className="text-lg font-bold text-white">AJ</span> */}
+              {/* </div> */}
+              {/* <span className="text-2xl font-bold text-white transition-all duration-500 hover:text-[#0F475D]"> */}
+               <img src="/public/arifjahan.png" width={200} className="items-center" alt="" />
+              {/* </span> */}
             </Link>
 
             {/* Desktop Navigation with Icons & Animation */}
