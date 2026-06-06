@@ -34,7 +34,7 @@ const About = () => {
             className="relative w-[280px] h-[280px] md:w-[420px] md:h-[420px] rounded-full bg-gradient-to-tr from-secondary to-green-400 p-1"
           >
             <img
-              src="/hero1.png"
+              src="/arif jahan.png"
               alt="Arif Jahan"
               className="object-cover w-full h-full border-4 rounded-full border-secondary"
             />
@@ -76,7 +76,7 @@ const About = () => {
                   <HiEnvelopeOpen className="w-11 h-11 text-secondary" />
                   <span>
                     Email Us
-                    <p className="text-gray">mdarifjahan2004@gmail.com</p>
+                    <p className="text-gray">mdarifjahan138@gmail.com</p>
                   </span>
                 </motion.div>
                 {/* whileHover={{ scale: 1.05 }} */}
@@ -84,7 +84,8 @@ const About = () => {
                   <BiSolidPhoneCall className="w-11 h-11 text-secondary" />
                   <span>
                     Phone Number
-                    <p className="text-gray">+880 1720415286</p>
+                    
+                    <p className="text-gray">+880 1570223729</p>
                   </span>
                 </motion.div>
               </div>
