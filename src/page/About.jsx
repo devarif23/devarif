@@ -25,18 +25,18 @@ const About = () => {
   return (
     <>
       <section className="flex items-center justify-center min-h-screen p-6 text-white font-helvetica">
-        <div className="flex flex-col items-center w-full max-w-6xl gap-10 md:flex-row">
+        <div className="flex flex-col items-center w-full max-w-6xl md:gap-20 gap-8 md:flex-row">
 
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8 }}
-            className="relative w-[280px] h-[280px] md:w-[420px] md:h-[420px] rounded-full bg-gradient-to-tr from-secondary to-green-400 p-1"
+            className="relative w-[280px] h-[280px] md:w-[420px] md:h-[500px] rounded-full bg-gradient-to-tr from-secondary to-green-400 p-1"
           >
             <img
               src="/arif jahan.png"
               alt="Arif Jahan"
-              className="object-cover w-full h-full border-4 rounded-full border-secondary"
+              className="object-cover w-full  h-full border-4 rounded-full border-secondary"
             />
           </motion.div>
 
